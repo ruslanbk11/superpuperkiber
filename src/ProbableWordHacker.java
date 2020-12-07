@@ -3,7 +3,7 @@ import java.util.List;
 
 public class ProbableWordHacker {
 
-    public static void main(String[] args) {
+    public static void main() {
         String input = "you will NEVER hack my string and read this, but if you do don't read this";
 
         System.out.println("Caesar Hack".toUpperCase());
@@ -13,7 +13,7 @@ public class ProbableWordHacker {
                         "and",
                         10,
                         "caesar"
-                )
+                ) + "\n"
         );
 
         System.out.println("Shuffle Hack".toUpperCase());
@@ -23,7 +23,7 @@ public class ProbableWordHacker {
                         "but",
                         10,
                         "shuffle"
-                )
+                ) + "\n"
         );
 
         System.out.println("Vigener Hack".toUpperCase());
@@ -33,7 +33,7 @@ public class ProbableWordHacker {
                         "string",
                         3,
                         "vigener"
-                )
+                ) + "\n"
         );
     }
 

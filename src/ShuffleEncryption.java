@@ -4,11 +4,11 @@ public class ShuffleEncryption {
 
     public static String encryptResult;
 
-    public static void main(String[] args) {
+    public static void main() {
         String input = "is it caesar or shuffle encryption???";
         encryptResult = encrypt(input,4);
-        System.out.println(encryptResult);
-        System.out.println(decrypt(encryptResult, 4));
+        System.out.println("Encrypted shuffle: " + encryptResult);
+        System.out.println("Decrypted shuffle: " + decrypt(encryptResult, 4) + "\n\n");
     }
 
     public static String encrypt(String input, int key) {

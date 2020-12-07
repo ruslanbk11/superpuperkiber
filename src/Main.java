@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        CaesarEncryption.encrypt("aaaa", 5);
+        System.out.println();
+        CaesarEncryption.main();
+        ShuffleEncryption.main();
+        VigenerEncryption.main();
+        ProbableWordHacker.main();
     }
 }

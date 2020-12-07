@@ -2,11 +2,11 @@ public class CaesarEncryption {
 
     public static String encryptResult;
 
-    public static void main(String[] args) {
+    public static void main() {
         String input = "is it caesar or shuffle encryption???";
 
-        System.out.println(encrypt(input,5));
-        System.out.println(decrypt(encryptResult, 5));
+        System.out.println("Encrypted caesar: " + encrypt(input,5));
+        System.out.println("Decrypted caesar: " + decrypt(encryptResult, 5) + "\n\n");
     }
 
     public static String encrypt(String input, int key) {

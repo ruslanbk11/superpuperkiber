@@ -3,21 +3,21 @@ public class VigenerEncryption {
     private static String alphabet = string + string.toUpperCase() + ' ';
     private static String encryptResult;
 
-    public static void main(String[] args) {
+    public static void main() {
         encryptResult = encrypt("is it caesar or shuffle encryption???", "hey");
-        System.out.println(encryptResult);
-        System.out.println(decrypt(encryptResult, "hey"));
+        System.out.println("Encrypted vigener: " + encryptResult);
+        System.out.println("Decrypted vigener: " + decrypt(encryptResult, "hey") + "\n\n");
     }
 
     public static String encrypt(String input, String key) {
-        return vigenere(input, key, true );
+        return vigener(input, key, true );
     }
 
     public static String decrypt(String input, String key) {
-        return vigenere(input, key, false );
+        return vigener(input, key, false );
     }
 
-    public static String vigenere(String input, String key, boolean encrypt) {
+    public static String vigener(String input, String key, boolean encrypt) {
         int alphabetLength = alphabet.length();
         StringBuilder encryptedText = new StringBuilder(input.length());
 
