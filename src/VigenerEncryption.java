@@ -1,12 +1,12 @@
-public class VijnerEncryption {
+public class VigenerEncryption {
     private static String string = "abcdefghijklmnopqrstuvwxyz";
     private static String alphabet = string + string.toUpperCase() + ' ';
     private static String encryptResult;
 
     public static void main(String[] args) {
-        encryptResult = encrypt("is it caesar or shuffle encryption???", "hey you");
+        encryptResult = encrypt("is it caesar or shuffle encryption???", "hey");
         System.out.println(encryptResult);
-        System.out.println(decrypt(encryptResult, "hey you"));
+        System.out.println(decrypt(encryptResult, "hey"));
     }
 
     public static String encrypt(String input, String key) {

@@ -1,14 +1,15 @@
 public class CaesarEncryption {
 
-    private static String encryptResult;
+    public static String encryptResult;
 
     public static void main(String[] args) {
         String input = "is it caesar or shuffle encryption???";
-        encrypt(input,5);
-        decrypt(encryptResult, 5);
+
+        System.out.println(encrypt(input,5));
+        System.out.println(decrypt(encryptResult, 5));
     }
 
-    public static void encrypt(String input, int key) {
+    public static String encrypt(String input, int key) {
         StringBuilder stringBuilder = new StringBuilder();
 
         for (char symbol : input.toCharArray()) {
@@ -18,10 +19,10 @@ public class CaesarEncryption {
             stringBuilder.append(symbol);
         }
         encryptResult = stringBuilder.toString();
-        System.out.println(encryptResult);
+        return encryptResult;
     }
 
-    public static void decrypt(String input, int key) {
-        encrypt(input, -key);
+    public static String decrypt(String input, int key) {
+        return encrypt(input, -key);
     }
 }
